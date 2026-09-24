@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-syne: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-grotesk: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-serif: 'Newsreader', Georgia, serif;
+
+  --color-surface: var(--color-surface, #F6F4EF);
+  --color-surface-subtle: var(--color-surface-subtle, #ECEAE3);
+  --color-surface-card: var(--color-surface-card, #FFFFFF);
+  --color-surface-dim: var(--color-surface-dim, #E5E2DA);
+  --color-surface-dark: #121316;
+  --color-on-surface: var(--color-on-surface, #121316);
+  --color-on-surface-variant: var(--color-on-surface-variant, #58595C);
+  --color-outline: var(--color-outline, #D2CFC6);
+  --color-outline-strong: var(--color-outline-strong, #121316);
+  --color-accent: #9E2A2B;
+}
+
+:root {
+  --color-surface: #F6F4EF;
+  --color-surface-subtle: #ECEAE3;
+  --color-surface-card: #FFFFFF;
+  --color-surface-dim: #E5E2DA;
+  --color-on-surface: #121316;
+  --color-on-surface-variant: #58595C;
+  --color-outline: #D2CFC6;
+  --color-outline-strong: #121316;
+}
+
+.dark {
+  --color-surface: #121316;
+  --color-surface-subtle: #191A1E;
+  --color-surface-card: #1E2024;
+  --color-surface-dim: #101114;
+  --color-on-surface: #F4F1EA;
+  --color-on-surface-variant: #9A9B9E;
+  --color-outline: #2C2D31;
+  --color-outline-strong: #F4F1EA;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  overflow-x: hidden;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-fast {
+  display: flex;
+  width: 200%;
+  animation: marquee 18s linear infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
