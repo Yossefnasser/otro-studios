@@ -1,3 +1,5 @@
+import bottomsDenimImg from '../assets/images/bottoms_denim_1790269588926.jpg';
+
 export interface Product {
   id: string;
   name: string;
@@ -289,21 +291,22 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'pleated-carpenter-bottoms',
-    name: 'Disciplined Wide Trouser',
-    subtitle: 'Heavy Cotton Drill Double Pleated Pant',
+    name: 'Relaxed Slub Denim Trouser',
+    subtitle: 'Light Wash Slub Denim Relaxed Cut',
     division: 'BOTTOMS',
-    categoryLabel: 'ARCHITECTURAL FIT',
+    categoryLabel: 'DENIM BOTTOMS',
     price: 175.0,
     badge: 'NEW',
-    colors: ['#cfc9bc', '#28292c'],
-    colorNames: ['Bone Khaki', 'Raw Obsidian'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAC9Xah5SW9u5G7vhnsmGm0uSs5j77EbGcHGlrxbLsNDJAfB3KkSZsn_gJjWJRlvOPbf2MARMqFNXCU4YchJAUGcTUgAr2JMGFgVWeU4cq_Hg0Er7v3Qv6_B_OiNNx_rbjFAjjl2mBozeSL92KChWIqYqdI15EFtu6y6r2I8srde2Ak1bPOVBc3NKAJlvKdJ3taXeGLj8mBlnJ7vQujUKhuXYIzOQT24RQQt7415NAuYy41P-zD6caoz3LAYrbHkS_D',
-    weightGsm: 440,
-    fabrication: '440 GSM Heavy Cotton Drill',
+    colors: ['#8ba3c7', '#28292c'],
+    colorNames: ['Vintage Light Indigo', 'Raw Obsidian'],
+    image: bottomsDenimImg,
+    secondaryImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAC9Xah5SW9u5G7vhnsmGm0uSs5j77EbGcHGlrxbLsNDJAfB3KkSZsn_gJjWJRlvOPbf2MARMqFNXCU4YchJAUGcTUgAr2JMGFgVWeU4cq_Hg0Er7v3Qv6_B_OiNNx_rbjFAjjl2mBozeSL92KChWIqYqdI15EFtu6y6r2I8srde2Ak1bPOVBc3NKAJlvKdJ3taXeGLj8mBlnJ7vQujUKhuXYIzOQT24RQQt7415NAuYy41P-zD6caoz3LAYrbHkS_D',
+    weightGsm: 460,
+    fabrication: '14.5 OZ Ring-Spun Vintage Slub Denim',
     hardware: 'Cast Gunmetal Buckle & Rivets',
     origin: 'Mansoura Design Lab',
-    dyeing: 'Stone Mineral Wash',
-    description: 'Deep double-pleat volume falling into a relaxed straight leg. Internal waistband drawstring with brushed hardware buckle adjustment.',
+    dyeing: 'Stone Mineral Acid Wash',
+    description: 'Relaxed straight leg silhouette cut in heavy 14.5 oz textured denim. Features custom washed faded blue palette with natural whiskering and stacking hem.',
     measurements: [
       { size: 'S', chestCm: 80, lengthCm: 104, shoulderCm: 32, inStock: true },
       { size: 'M', chestCm: 85, lengthCm: 106, shoulderCm: 34, inStock: true },
@@ -433,7 +436,7 @@ export const CATEGORIES = [
     code: 'DIVISION // 03',
     title: 'BOTTOMS',
     count: '02 STYLES',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB0AEVYPGgGXjliqWQm7k826GsGvTfatZUPnoMm55Od-OiSRCl9s-iZWAbvWrFp_ezbzYlH2fH8S_8Wc-92dPS5OzXOqkmcSQ90qtce1p-QHshOVfdBLOW2Uu_jtZBQ2CoXdH9iL_aINFzVeVcTwaunEhGEBdwexsxqPAX7a1krRH9jg5YxyjwSKoEYGRdXKLoqdaLIWHNmalpnscJwQcH-1MC3djRFH8i4LqwcsrQfJW3oWlHsYT-swMTh90dOXUya',
+    image: bottomsDenimImg,
   },
   {
     id: 'outerwear',
